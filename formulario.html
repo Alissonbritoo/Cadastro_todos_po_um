@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="container"></div>
+    <div class="box">
+      <form action="">
+        <fieldset>
+          <legend><b>Todos por um</b></legend>
+          <br />
+          <div class="inputBox">
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              class="inputUser"
+              required
+            />
+            <label for="nome" class="labelInput">Nome completo</label>
+          </div>
+          <br /><br />
+          <div class="campo">
+            <label for="escola"><strong>Escola</strong></label>
+            <select id="escola">
+              <option selected disabled value="">Selecione</option>
+              <option>Santos dumont</option>
+              <option>Augusto Severo</option>
+              <option>Souza Leão</option>
+              <option>Colégio Piedade</option>
+              <option>Viver</option>
+            </select>
+          </div>
+          <br />
+          <div class="inputBox">
+            <p>Você tem alguma deficiência?</p>
+            <input type="radio" id="sim" name="nome" value="sim" required />
+            <label for="sim">Sim</label>
+            <input type="radio" id="não" name="nome" value="não" required />
+            <label for="não">Não</label>
+            <br /><br />
+            &nbsp;
+            <label for="tipo">Qual</label>
+            <select id="tipo">
+              <option selected disabled value="">Selecione</option>
+              <option>Autismo</option>
+              <option>Visual</option>
+              <option>Auditivo</option>
+              <option>Cadeirante</option>
+            </select>
+          </div>
+          <p>Sexo:</p>
+          <input
+            type="radio"
+            id="masculino"
+            name="genero"
+            value="masculino"
+            required
+          />
+          <label for="masculino">Masculino</label>
+          <input
+            type="radio"
+            id="feminino"
+            name="genero"
+            value="femenino"
+            required
+          />
+          <label for="femenino">Femenino</label>
+          <br /><br /><br />
+          <div class="inputBox">
+            <input
+              type="tel"
+              name="telefone"
+              id="telefone"
+              class="inputUser"
+              required
+            />
+            <label for="telefone" class="labelInput">Telefone</label>
+          </div>
+          <div>
+            <label for="data_nascimento"><b>Data de Nascimento:</b></label>
+            <input
+              type="date"
+              name="data_nascimento"
+              id="data_nascimento"
+              required
+            />
+          </div>
+          <br /><br />
+          <div class="inputBox">
+            <input
+              type="text"
+              name="bairro"
+              id="bairro"
+              class="inputUser"
+              required
+            />
+            <label for="bairro" class="labelInput">Bairro</label>
+          </div>
+          <br /><br />
+          <div class="inputBox">
+            <input
+              type="text"
+              name="endereco"
+              id="endereco"
+              class="inputUser"
+              required
+            />
+            <label for="endereco" class="labelInput">Endereço</label>
+          </div>
+          <br />
+          <div class="campo">
+            <label
+              ><strong>
+                Ei! Nos conte o que você espera do professor?
+              </strong></label
+            >
+            <textarea
+              row="10"
+              style="width: 20em"
+              id="expectativa"
+              name="expectativa"
+            ></textarea>
+          </div>
+          <br /><br />
+          <input type="submit" name="submit" id="submit" />
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
